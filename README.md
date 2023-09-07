@@ -1,6 +1,6 @@
 # smallMatrix
 A `SmallMatrix` is a small-storage-optimised matrix whose elements are allocated on the stack if the number of elements is less than 144 allowing fast read/write speeds. If the number of elements is 144 or greater, then its contents are allocated on the heap. 
-
+## Specifications
 The specification for `SmallMatrix` is summarised below:
 
 <table>
@@ -270,3 +270,13 @@ std::cout &lt;&lt; m;</pre></code></td>
         <td>None.</td>
     </tr>
 </table>
+
+## Compiling
+
+It is compiled with C++14.
+
+To compile with the given main file, use the following command,
+'''
+g++ -std=c++14 main.cpp SmallMatrix.cpp -o small_matrix
+'''
+
